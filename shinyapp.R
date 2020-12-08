@@ -245,7 +245,15 @@ ui <- navbarPage(
                In the 2000-01 season, the highest amount a Premier League team spent was $61.93 million.
                In 2015-16 season, the highest amount a Premier League team spent was $229.01 million. See the difference?"),
              fluidPage(
-                 imageOutput("model")
+                 imageOutput("model"),
+                 p("This regression model shows the effect of money spent on wins, losses, goals for,
+                   and goals against. It is seen that money spent has a positive effect on wins. This means
+                   that for every 11.481 million, the intercept, a Premier League team has 2.1 wins more.
+                   However, when it comes to losses, it is seen that money has the opposite correlation. A team who spend more
+                   money can be seen to lose 1.5 games more for every 11.481 million spent. This shows that not every 
+                   Premier League team spends their money efficiently. With lots of money spent, some may succeed, and some may fail.
+                   Lastly, for goals for and goals against, more money spent has a positive effect on both, where for every 11.481 million spent,
+                   a team scores 0.56 goals more and conceded 0.54 less.")
              )),
     tabPanel("About", 
              titlePanel("About my project"),
